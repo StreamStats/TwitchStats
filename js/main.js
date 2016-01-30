@@ -30,7 +30,7 @@ function getData(){
          html += '<br><b>Total Views: </b>' + totalViews;
          html += "<br>";
          html += '<br><b>Current Status:</b>' + online;
-         html += '<br><b>Has a Sub Button:</b>' + sub;
+         html += '<br><b>Partnered:</b>' + sub;
          html += '<br><b>Has mature content:</b>' + mature;
          html+= '<br><b>Last Played: </b>' + lastPlayed;
          html += '<br><b>Joined on: </b>' + joined.replace('T', ' at ');
