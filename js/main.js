@@ -12,7 +12,7 @@ function getData(){
     $.get('https://api.twitch.tv/kraken/channels/' + $('#inputText').val(), "", function(data){
          
          var avatar = data['logo'];
-         var username = data['display_name'];
+         var Username = data['display_name'];
          var followers = data['followers'];
          var totalViews = data['views'];
          var sub = data['partner'];
@@ -25,7 +25,7 @@ function getData(){
          }
          var joined = data['created_at'];
          var html = '<center><img src="' + avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
-         html += '<h1>' + username + '</h1>';
+         html += '<h1><span class="label label-success">' + Username + '</h1>';
          html += '<br><b>Followers: </b>' + followers;
          html += '<br><b>Total Views: </b>' + totalViews;
          html += "<br>";
