@@ -26,14 +26,20 @@ function getData(){
          var joined = data['created_at'];
          var html = '<center><img src="' + avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
          html += '<h1><span class="label label-success">' + Username + '</h1>';
-         html += '<br><b>Followers: </b>' + followers;
-         html += '<br><b>Total Views: </b>' + totalViews;
+         html += '<br><b><span class="label label-success">Followers:' + followers + '</b>';
+         html += '<br><b><span class="label label-success">Total Views:' + totalViews + '</b>';
          html += "<br>";
-         html += '<br><b>Current Status:</b>' + online;
-         html += '<br><b>Partnered:</b>' + sub;
-         html += '<br><b>Has mature content:</b>' + mature;
-         html+= '<br><b>Last Played: </b>' + lastPlayed;
-         html += '<br><b>Joined on: </b>' + joined.replace('T', ' at ');
+         html += '<br><b><span class="label label-success">Current Status: ' + online + '</b>';
+         html += "<br>";
+         if(online){
+             html += '<br><b><span class="label label-success"><a href="https://twitch.tv/' + Username + '">Online</a></font></b>';
+         }else{
+             html += '<br><b><span class="label label-danger">Offline</font></b>';
+         }
+         html += '<br><b><span class="label label-danger">Partnered:' + sub + '</b>';
+         html += '<br><b><span class="label label-primary">Has mature content: ' + mature + '</b>';
+         html += '<br><b><span class="label label-primary">Last Played: ' + lastPlayed + '</b>';
+         html += '<br><b><span class="label label-success">Joined on: '+joined+' </b>'.replace('T', ' at ');
          $('.profile').html(html);
       }).fail(function(data){
             html = '<h1>A Twitch user with that name does not exist.';
