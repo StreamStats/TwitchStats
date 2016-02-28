@@ -31,7 +31,7 @@ function getData(){
          html += "<br>";
          html += '<br><b><span class="label label-success">Current Status: ' + online + '</b>';
          html += "<br>";
-         html += '<br><b><font color="White"><a href="https://twitch.tv/' + Username + '">Twitch.tv/'+ Username +'</a></font></b>';
+         html += '<br><b><span class="label label-primary"><font color="White"><a href="https://twitch.tv/' + Username + '">Twitch.tv/'+ Username +'</a></font></b>';
          html += '<br><b><span class="label label-danger">Partnered:' + sub + '</b>';
          html += '<br><b><span class="label label-primary">Has mature content: ' + mature + '</b>';
          html += '<br><b><span class="label label-primary">Last Played: ' + lastPlayed + '</b>';
