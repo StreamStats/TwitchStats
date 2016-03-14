@@ -14,7 +14,7 @@ function getData(){
          var avatar = data['logo'];
          var Username = data['display_name'];
          var followers = data['followers'];
-         var Follows = data['follows']['name'];
+         var Follows = data['follows'];
          var totalViews = data['views'];
          var sub = data['partner'];
          var mature = data['mature'];
