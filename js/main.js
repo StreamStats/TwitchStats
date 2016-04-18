@@ -27,7 +27,6 @@ function getData(){
          var html = '<center><img src="' + avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
          html += '<h1><span class="label label-success">' + Username + '</h1>';
          html += '<br><b><span class="label label-success">Followers:' + followers + '</b>';
-         html += '<br><b><span class="label label-success">Last Follower:' + Follows + '</b>';
          html += '<br><b><span class="label label-success">Total Views:' + totalViews + '</b>';
          html += "<br>";
          html += '<br><b><span class="label label-success">Current Status: ' + online + '</b>';
