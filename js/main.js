@@ -29,7 +29,7 @@ function getData(){
             var lastPlayed = "None";
          }
          var joined = data['created_at'];
-         var html = '<center><img src="' + avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
+         var html = '<center><img src="' + avatar + '"width="100px" height="100px" style="border:3px solid red">';
          html += '<h1><span class="label label-success">' + Username + '</h1>';
          html += '<br><b><span class="label label-success">Followers:' + followers + '</b>';
          html += '<br><b><span class="label label-success">Total Views:' + totalViews + '</b>';
