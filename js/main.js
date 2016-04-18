@@ -17,6 +17,11 @@ function getData(){
          var totalViews = data['views'];
          var sub = data['partner'];
          var mature = data['mature'];
+                  if(data['mature'] != null){
+            var mature = data['mature'];
+         }else{
+            var mature = "None";
+         }
          var online = data['status'];
          if(data['game'] != null){
             var lastPlayed = data['game'];
