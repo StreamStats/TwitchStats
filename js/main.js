@@ -9,7 +9,7 @@ $(document).ready(function(event){
    });
 });
 function getData(){
-    $.get('https://api.twitch.tv/kraken/channels/' + $('#inputText').val(), "", function(data){
+    $.get('https://api.twitch.tv/kraken/channels/' + $('#inputText').val() + '?client_id=ba5m54krq9n07wh8ra7ee5lb53vxaag'), "", function(data){
          
          var avatar = data['logo'];
          var Username = data['display_name'];
