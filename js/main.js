@@ -16,6 +16,7 @@ function getData(){
             var totalViews = data.views;
             var sub = data.partner;
             var online = data.status;
+            var ID = data._id;
             var joined = data.created_at.replace('T', ' at ');
             var mature = (data.mature !== null) ? data.mature: "None";
             var lastPlayed = (data.game !== null) ? data.game: "None";
@@ -29,6 +30,7 @@ function getData(){
                      '<br />'+
                      '<br /><b><span class="label label-info"><font color="White"><a href="https://twitch.tv/' + Username + '">Twitch.tv/'+ Username +'</a></font></b>'+
                      '<br /><b><span class="label label-danger">Partnered:' + sub + '</b>'+
+                     '<br /><b><span class="label label-danger">ID:' + ID + '</b>'+
                      '<br /><b><span class="label label-primary">Has mature content: ' + mature + '</b>'+
                      '<br /><b><span class="label label-primary">Last Played: ' + lastPlayed + '</b>'+
                      '<br /><b><span class="label label-success">Joined on: '+joined+' </b>';
