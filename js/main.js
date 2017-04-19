@@ -20,7 +20,7 @@ function getData(){
             var joined = data.created_at.replace('T', ' at ');
             var mature = (data.mature !== null) ? data.mature: "None";
             var lastPlayed = (data.game !== null) ? data.game: "None";
-        
+        console.log("Someone Pressed The Button \nFollowers:"+followers+"\nLive:"+online)
          var html = '<center><img src="' + avatar + '"width="100px" height="100px" style="border:3px solid red">'+
                      '<h1><span class="label label-success">' + Username + '</h1>'+
                      '<br /><b><span class="label label-success">Followers:' + followers + '</b>'+
