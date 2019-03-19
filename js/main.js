@@ -8,7 +8,7 @@ $(document).ready(function(event){
    });
 });
 function getData(){
-     $.getJSON('https://api.twitch.tv/kraken/channels/' + $('#inputText').val() + '?client_id=gf85a8tdw7zytg4uz2viijdrzkul5p', function(data){
+     $.getJSON('https://api.twitch.tv/kraken/channels/' + $('#inputText').val() + '?client_id=2oag632o0mp6n85h3mismr2ocsa1jip', function(data){
          
          var avatar = data.logo;
             var Username = data.display_name;
